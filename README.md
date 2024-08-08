@@ -5,7 +5,8 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&duration=10000&width=1000&lines=Mojo+language+TypeScript+ILOVEC%2B%2B+MAX%26Mojo+easy+c+lua+pythonSyntax+ILOVERUST+coding+js)
 
 
-controls: 
+**controls**: 
+
 q --> quit
 
 wasd --> move
