@@ -7,6 +7,7 @@
 
 controls: 
 q --> quit
+
 wasd --> move
 
 
