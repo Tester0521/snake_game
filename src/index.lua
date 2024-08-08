@@ -1,5 +1,4 @@
 local termios = require("input_module")
-local aw = require("async_await")
 
 local odd = function (size) local x = math.random(size) if x % 2 == 0 then return x end return x + 1 end
 local sleep = function (a) local sec = tonumber(os.clock() + a) while (os.clock() < sec) do end end
@@ -87,11 +86,6 @@ local get_input = function ()
         game_over = true
     end
 end
-
--- local main = aw.async(function ()
---     aw.await_all{render(), snake_move()}
---     aw.await(get_input())
--- end)
 
 local
 t1 = os.clock()
