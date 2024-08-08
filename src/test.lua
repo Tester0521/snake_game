@@ -21,5 +21,6 @@ co = coroutine.create(func2)
 while true do
 	func()
 	coroutine.resume(co)
-	sleep(5)
+	coroutine.resume(co)
+	sleep(2)
 end

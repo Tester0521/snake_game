@@ -72,7 +72,7 @@ end
 
 
 local get_input = function ()
-    local input = io.read(1)
+    local input = termios.read_input() -- io.read(1)
 
 
     if input == "w" and direction ~= "down" then
@@ -93,11 +93,11 @@ end
 --     aw.await(get_input())
 -- end)
 
+local
+t1 = os.clock()
 while not game_over do
-    render()
-    move_snake()
-
-    sleep(1)
+    get_input()
+    if (os.clock() - t1) < 0.3 then else render() move_snake() t1 = os.clock() end
 end
 
 print("Game Over!")
